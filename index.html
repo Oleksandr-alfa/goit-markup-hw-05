@@ -555,7 +555,68 @@
             </li>
           </ul>
         </div>
+
+        <form class="form-subscribe">
+          <label class="form-subscribe-label" for="user-email">Subscribe</label>
+          <div class="input-btn-box">
+            <input
+              class="footer-email-input"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+            /><button class="form-subscribe-btn" type="submit">
+              Subscribe
+              <svg class="icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="icon" width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">
+         Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <label class="modal-form-label" for="user-name">Name</label>
+          <input
+            class="modal-form-input"
+            type="text"
+            name="user-name"
+            
+          />
+          <label class="modal-form-label" for="user-phone">Phone</label>
+          <input
+            class="modal-form-input"
+            type="tel"
+            name="user-phone"
+           
+          />
+          
+            <label class="modal-form-label" for="user-email">Email</label>
+              <input
+              class="modal-form-input"
+              type="email"
+              name="user-email"
+            
+            />
+         
+          <label class="modal-form-label" for="user-message">Comment</label>
+          <input
+            class="modal-input-message"
+            type="textarea"
+            name="user-message"
+            placeholder="Text input"
+          />
+          <button class="modal-form-btn" type="submit">Send</button>
+      </div>
+    </div>
   </body>
 </html>
