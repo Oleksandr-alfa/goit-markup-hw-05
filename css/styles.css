@@ -569,33 +569,42 @@ box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 
         max-width: 408px;
         width: 100%;
         text-align: center;
-        border-radius: 4px;
            height: 100%;
             max-height: 584px;
             box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-                background: #FCFCFC;
                 position: relative; 
     }
 
-    .modal-close-btn {display: block;
-       margin-left: auto;
-       margin-right: 0;
-       margin-bottom: 24px;
-        background: none;
-        border-radius: 4px;
+    .modal-close-btn {
+        display: flex;
+        margin: 0 0 24px auto;
+        background-color: #E7E9FC;
+        border-radius: 50%;
             width: 24px;
             height: 24px;
         cursor: pointer;
-    }
-
-        .modal-close-btn.icon {
-            fill: #2E2F42;
-            stroke: #2E2F42;
+        justify-content: center;
+            align-items: center;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color: transparent;
         }
 
-    .modal-close-btn:focus,
-    .modal-close-btn:hover {
-        background-color: #E7E9FC;
+            
+                                .modal-close-btn:focus,
+                                .modal-close-btn:hover {
+                                    background-color: #404BBF;
+                                        border-color: transparent;
+                                }
+
+        .modal-close-btn .icon { 
+            fill: #2E2F42;
+                transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                background-color: transparent;
+        }
+
+    .modal-close-btn:focus .icon,
+    .modal-close-btn:hover .icon {
+        fill: #fff;
     }
 
         .modal-text{
@@ -651,6 +660,7 @@ box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 
                 margin-bottom: 16px;
                 padding: 8px 16px;
                 
+                resize: none;
             }
 
 
@@ -660,3 +670,73 @@ box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 
                     top: 0;
                     left: 0;
             }
+
+            .modal-form-checkbox {
+                display: flex;
+                   align-items: flex-start;
+                    gap: 8px;
+                    margin-bottom: 24px;
+                    flex-direction: column;
+            }
+
+            .modal-form-label {
+                display: flex;
+                    align-items: center;
+                    gap: 8px;
+            }
+            .input-checkbox {
+    /* display: none; */
+    
+}
+
+           .modal-form-label {
+            margin: 0;
+           }
+
+           .input-checkbox:checked + .modal-form-label .custom-checkbox {
+    background-color: #404bbf;
+        border-radius: 2px;
+        fill: #404bbf;
+        border: 1px solid #404bbf;
+}
+           .custom-checkbox {
+    width: 16px;
+    height: 16px;
+    display: block;
+    border: 1px solid rgb(46, 47, 66, 0.4);
+    border-radius: 2px;
+        
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon {
+    fill: #fff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+         .modal-form-link {
+            color: #4D5AE5;
+                text-decoration: none;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                /* line-height: 16px; */
+                    line-height: 1.33333;
+                    text-decoration: underline;
+                    text-decoration-skip-ink: none;
+                  }
+                  .modal-form-btn{
+                    border-radius: 4px;
+                       padding: 16px 32px;
+                        width: 169px;
+                        height: 56px;
+                        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                            background: #4D5AE5;
+                            color: #fff;
+                            margin: 0 auto;
+                  }
+                    .modal-form-btn:focus,
+                    .modal-form-btn:hover {
+                        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                            background: #404BBF;
+                    }
