@@ -561,6 +561,7 @@
           <div class="input-btn-box">
             <input
               class="footer-email-input"
+              id="user-email"
               type="email"
               name="user-email"
               placeholder="E-mail"
@@ -592,6 +593,7 @@
               <use href="./images/icons.svg#icon-person"></use></svg>
             <input
               class="modal-form-input"
+              id="user-name"
               type="text"
               name="user-name"/>
            </div>
@@ -603,6 +605,7 @@
               <use href="./images/icons.svg#icon-phone"></use></svg>
             <input
               class="modal-form-input"
+                id="user-phone"
               type="tel"
               name="user-phone"/>
           </div>
@@ -616,17 +619,19 @@
                  <use href="./images/icons.svg#icon-email"></use></svg>
                 <input
                 class="modal-form-input"
+                id="user-email"
                 type="email"
                 name="user-email"/>
              </div>
+        </form>
          
           <label class="modal-form-label" for="user-message">Comment</label>
           <textarea
             class="modal-input-message"
+            id="user-message"
             name="user-message"
             placeholder="Text input"
            ></textarea>
-        </textarea>
         <div class="modal-form-checkbox" ><input class="input-checkbox visually-hidden" type="checkbox" id="user-agreement" required/><label class="modal-form-label" for="user-agreement"><span class="custom-checkbox"><svg class="check-icon" width="10px" height="8px"><use href="./images/icons.svg#icon-vector"></use></svg></span>I accept the terms and conditions of the <a class="modal-form-link" href="#">Privacy Policy</a></label></div>
           <button class="modal-form-btn" type="submit">Send</button>
       </div>
