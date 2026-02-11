@@ -505,6 +505,7 @@ box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: #2E2F42;
+    color: #fff;
 }
 
 .footer-email-input::placeholder {
